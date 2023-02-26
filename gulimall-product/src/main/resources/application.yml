@@ -2,7 +2,7 @@ spring:
   datasource:
     username: root
     password: root
-    url: jdbc:mysql://#:3306/gulimall_pms
+    url: jdbc:mysql://47.98.187.212:3306/gulimall_pms
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       max-lifetime: 50000
@@ -11,7 +11,7 @@ spring:
   cloud:
       nacos:
         discovery:
-          server-addr: #nacos注册中心地址
+          server-addr: 47.98.187.212:8848
       # 文件上传秘钥
       alicloud:
         access-key: #
@@ -35,7 +35,7 @@ spring:
   thymeleaf:
     cache: false
   redis:
-    host: 192.168.56.102
+    host: 47.98.187.212
     port: 6379
   cache:
     type: redis
